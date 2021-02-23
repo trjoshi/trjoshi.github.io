@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>CSS Template</title>
+<title>About Me</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
@@ -15,7 +15,7 @@ body {
 
 /* Style the header */
 .header {
-	border-radius: 25px;
+	border-radius: 20px;
 	background-color: #f1f1f1;
 	padding: 1px;
 	font-size: 15px;
@@ -24,11 +24,11 @@ body {
 
 /* Create three equal columns that floats next to each other */
 .column {
-	border-radius: 25px;
+	border-radius: 20px;
 	background-color: #f1f1f1;
 	padding: 1px;
-	font-size: 15px;
-	height: 800px;
+	font-size: 12px;
+	height: 670px;
 	margin: 0px 20px auto;
 }
 
@@ -44,6 +44,7 @@ body {
 	float: left;
 	width: 33.33%;
 	padding: 5px;
+	margin-left: 20px;
 }
 
 /* Clear floats after image containers */
@@ -52,49 +53,75 @@ body {
 	clear: both;
 	display: table;
 }
+
+p {
+	margin-left: 20px;
+	position: relative;
+}
+
+h3 {
+	margin-left: 20px;
+	position: relative;
+}
 </style>
 </head>
 <body>
-
 	<div class="header">
-		<h2 style="text-align: center;">About Me</h2>
-		<p style="text-align: justify;">Hi! My Name is Tirth Raj Joshi. I
-			am from Kathmandu, Nepal.</p>
+		<!--   <h2 style="text-align: center;">About Me</h2>-->
+		<h3 style="color: maroon">Hi There, I am Tirth Raj Joshi</h3>
+		<h3 style="color: maroon">Computer Engineer</h3>
 		<p style="line-height: 30px; border: 1px solid black;">
 	</div>
 
 	<div class="column">
 		<div>
-			<p>List of Class</p>
+			<h3>List of Class</h3>
 			<ul>
-				<li>CS 390 FPP</li>
-				<li>CS 401 MPP</li>
-				<li>STC - 2</li>
-				<li>CS 472 WAP</li>
+				<li style="color: maroon">CS 390 FPP</li>
+				<li style="color: maroon">CS 401 MPP</li>
+				<li style="color: maroon">STC - 2</li>
+				<li style="color: maroon">CS 472 WAP</li>
 			</ul>
 		</div>
 		<div>
-			<p>My Favorite Movies</p>
+			<h3>My Favorite Movies</h3>
 			<ul>
-				<li>Kollywood Movie - Pashupati Prasad</li>
-				<li>Hollywood Movie - Lone Serviour</li>
-				<li>Bollywood Movie - KGF</li>
+				<li style="color: maroon">Kollywood Movie - Pashupati Prasad <a
+					href="https://www.youtube.com/watch?v=O3GRxW9IkTg&ab_channel=HighlightsNepal"
+					target="_blank">(Watch Trailor)</a>
+				</li>
+				<li style="color: maroon">Hollywood Movie - Lone Serviour <a
+					href="https://www.youtube.com/watch?v=yoLFk4JK_RM&ab_channel=MovieclipsTrailers">(Watch
+						Trailor)</a>
+				</li>
+				<li style="color: maroon">Bollywood Movie - KGF <a
+					href="https://www.youtube.com/watch?v=-KfsY-qwBS0&ab_channel=ExcelMovies">(Watch
+						Trailor)</a>
+				</li>
 			</ul>
 		</div>
+
 		<div class="row">
+			<h3>My Mood</h3>
+			<p style="color: maroon">I am always ready to go for trekking and
+				these are the piks of my last trek.</p>
 			<div class="columns">
 				<img src="images/dudhkunda.jpg" alt="Snow" style="width: 100%">
 			</div>
 			<div class="columns">
-				<img src="images/mist.jpg" alt="Forest" style="width: 100%">
+				<img src="images/sun.jpg" alt="Forest" style="width: 100%">
 			</div>
 		</div>
+		<div>
+			<h3>Fun Facts about my neighour</h3>
+			<ul>
+				<li style="color: maroon">He is a Jolly person</li>
+				<li style="color: maroon">Always in hurry</li>
+			</ul>
+
+		</div>
 	</div>
-
-
-	<div class="footer">
-		<p style="line-height: 30px; border: 1px solid black;"></p>
-	</div>
-
+	<div class="footer"></div>
 </body>
 </html>
+
