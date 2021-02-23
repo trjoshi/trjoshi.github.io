@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+.header {
+	border-radius: 25px;
+	background-color: #f1f1f1;
+	padding: 1px;
+	font-size: 20px;
+	margin: 0px 20px auto;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+	border-radius: 25px;
+	background-color: #f1f1f1;
+	padding: 1px;
+	font-size: 15px;
+	height: 400px;
+	margin: 0px 20px auto;
+}
+
+/* Style the footer */
+.footer {
+	background-color: #f1f1f1;
+	padding: 20px;
+	text-align: center;
+	margin: 0px 20px auto;
+}
+
+.columns {
+	float: left;
+	width: 33.33%;
+	padding: 5px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+</style>
+</head>
+<body>
+
+	<div class="header">
+		<h2 style="text-align: center;">About Me</h2>
+		<p style="text-align: justify;">Hi! My Name is Tirth Raj Joshi. I
+			am from Kathmandu, Nepal.</p>
+		<p style="line-height: 30px; border: 1px solid black;">
+	</div>
+
+	<div class="column">
+		<div>
+			<p>List of Class</p>
+			<ul>
+				<li>CS 390 FPP</li>
+				<li>CS 401 MPP</li>
+				<li>STC - 2</li>
+				<li>CS 472 WAP</li>
+			</ul>
+		</div>
+		<div>
+			<p>My Favorite Movies</p>
+			<ul>
+				<li>Kollywood Movie - Pashupati Prasad</li>
+				<li>Hollywood Movie - Lone Serviour</li>
+				<li>Bollywood Movie - KGF</li>
+			</ul>
+		</div>
+		<div class="row">
+			<div class="columns">
+				<img src="dudhkunda.jpg" alt="Snow" style="width: 100%">
+			</div>
+			<div class="columns">
+				<img src="mist.jpg" alt="Forest" style="width: 100%">
+			</div>
+		</div>
+	</div>
+
+
+	<div class="footer">
+		<p style="line-height: 30px; border: 1px solid black;"></p>
+	</div>
+
+</body>
+</html>
