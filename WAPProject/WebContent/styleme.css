@@ -31,7 +31,7 @@ body {
 .footer {
 	background-color: #f1f1f1;
 	padding: 20px;
-	text-align: center;
+	text-align: left;
 	margin: 0px 20px auto;
 }
 
@@ -50,8 +50,14 @@ body {
 }
 
 p {
+	font-family: "Sofia", sans-serif;
+	font-style: italic;
+	font-weight: bold;
+	font-size: 15px;
 	margin-left: 20px;
 	position: relative;
+	margin-left: 20px;
+	font-style: italic;
 }
 
 h3 {
