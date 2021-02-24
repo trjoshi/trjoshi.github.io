@@ -12,6 +12,13 @@ body {
 	background-color: black;
 }
 
+.background {
+	background-image: url('images/silverware.jpg');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: 100% 100%;
+}
+
 .header {
 	padding: 1px;
 	margin: 0px 150px auto;
@@ -57,9 +64,8 @@ body {
 }
 
 uls {
-	
 	line-height: 0.1;
-	text-align: left;	
+	text-align: left;
 }
 
 .textItalic {
@@ -80,10 +86,10 @@ uls {
 	margin: 0px 0px 0px 30px;
 	font-size: 15px;
 }
+
 .footer {
 	text-align: right;
 }
-
 </
 style
 >
