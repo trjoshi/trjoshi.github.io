@@ -68,6 +68,12 @@ body {
 	margin: 0px 0px 0px 30px;
 	font-size: 15px;
 }
+
+.textleft {
+	text-align: right;
+	margin: 0px 0px 0px 30px;
+	font-size: 15px;
+}
 </
 style
 >
