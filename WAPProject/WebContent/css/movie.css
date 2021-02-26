@@ -52,6 +52,7 @@ body {
 	border-radius: 18px;
 	background: url('../movieimages/rbg.png');
 	background-repeat: repeat-x;
+
 }
 
 .header-inside {
@@ -60,8 +61,8 @@ body {
 
 .header-inside-para {
 	color: red;
-	font-size: 80px;
-	padding: 0px 0px 10px 0px;
+	font-size: 90px;
+	
 }
 
 .image-inside {
@@ -119,9 +120,15 @@ body {
 	margin: 0px 0px 0px 10px;
 }
 
+.inner-footer {
+	background-color: #489c24;
+	width: 100%;
+	height: 10px;
+}
+
 .right-element {
 	float: right;
-	background-color: #489c24;
+	background-color: #A2B964;
 	width: 250px;
 	height: 900px;
 	border-bottom-right-radius: 18px;
