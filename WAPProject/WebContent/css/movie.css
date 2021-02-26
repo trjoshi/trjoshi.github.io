@@ -10,43 +10,133 @@ body {
 	font-size: 100%;
 	line-height: 1;
 	font-family: Arial, Helvetica, sans-serif;
+	background: url('../movieimages/background.png');
 }
 
-.header {
-	padding: 1px;
-	font-size: 15px;
-	margin: 0px 20px auto;
+.header-img {
+	width: 70%;
+	height: 75px;
+	background: url('../movieimages/banner.png');
+	background-size: cover;
 }
 
+.header-img1 {
+	width: 15%;
+	height: 75px;
+	background: url('../movieimages/bannerbg.png');
+	background-size: cover;
+}
 
+.header-img-class {
+	width: 100%;
+	border: 1px solid black;
+	display: flex;
+}
 
+.title {
+	text-align: center;
+	font-weight: bold;
+	font-size: 30px;
+	text-shadow: 2px 2px gray;
+}
 
+.column {
+	border-radius: 20px;
+	border: 3px solid gray;
+	background: url('../movieimages/background.png');
+	height: 1300px;
+	margin: 0px 200px auto;
+}
 
+.header-border {
+	border-radius: 18px;
+	background: url('../movieimages/rbg.png');
+	background-repeat: repeat-x;
+}
 
+.header-inside {
+	border-top-left-radius: 18px;
+}
 
+.header-inside-para {
+	color: red;
+	font-size: 80px;
+	padding: 0px 0px 10px 0px;
+}
 
+.image-inside {
+	float: right;
+	border-top-right-radius: 18px;
+}
 
+.small-column {
+	float: left;
+	border-radius: 5px;
+	border: 3px solid gray;
+	font-size: 14px;
+	height: 135px;
+	width: 300px;
+	margin: 8px 20px;
+}
 
+.small-column1 {
+	float: left;
+	font-size: 14px;
+	height: 80px;
+	width: 300px;
+	margin: 8px 20px;
+}
 
+.small-column2 {
+	float: left;
+	border-radius: 5px;
+	border: 3px solid gray;
+	font-size: 14px;
+	height: 50px;
+	width: 300px;
+	margin: 8px 20px;
+}
 
+.ul {
+	list-style: url(../movieimages/rotten.gif);
+}
 
+.ul1 {
+	list-style: url(../movieimages/critic.gif);
+}
 
+.ul2 {
+	list-style: url(../movieimages/fresh.gif);
+}
 
+.unorder-list {
+	margin: 0px 10px;
+	font-size: 12px;
+}
 
+.li {
+	font-size: 10px;
+	margin: 0px 0px 0px 10px;
+}
 
+.right-element {
+	float: right;
+	background-color: #489c24;
+	width: 250px;
+	height: 900px;
+	border-bottom-right-radius: 18px;
+}
 
+.lowest {
+	width: 100%;
+	height: 10px;
+	background-color: #489c24;
+}
 
-
-
-
-
-
-
-
-
-
-
-
+.footer {
+	text-align: right;
+	margin: 0px 0px 80px auto;
+}
 </
 style
 >
