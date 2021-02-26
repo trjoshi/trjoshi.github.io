@@ -8,14 +8,14 @@ body {
 	font-family: Arial, Helvetica, sans-serif;
 }
 
-.top-header{
-	z-index:9;
+.top-header {
+	z-index: 9;
 	margin: 80px
 }
 
 .small-header {
 	border-radius: 20px;
-	background-color: #f1f1f1;
+	background-color: #e0e0ff;
 	padding: 1px;
 	font-size: 15px;
 	margin: 10px 350px auto;
@@ -23,13 +23,25 @@ body {
 /* Style the header */
 .header {
 	border-radius: 20px;
-	background-color: #f1f1f1;
+	background-color: #e0e0ff;
 	padding: 1px;
 	font-size: 15px;
 	margin: 10px 350px auto;
 }
 
-.header-mid{
+.ul {
+	list-style: url(../images/pie_icon.gif);
+}
+
+.header-down {
+	border-radius: 20px;
+	background-color: white;
+	padding: 1px;
+	font-size: 15px;
+	margin: 10px 350px auto;
+}
+
+.header-mid {
 	margin: 50px;
 }
 
@@ -51,7 +63,7 @@ label {
 }
 
 .button {
-	background-color: pink; /* Green */
+	background-color: #ffaaaa;
 	border: none;
 	color: white;
 	padding: 5px 5px;
@@ -60,7 +72,6 @@ label {
 	display: inline-block;
 	color: black;
 }
-
 </
 style
 >
