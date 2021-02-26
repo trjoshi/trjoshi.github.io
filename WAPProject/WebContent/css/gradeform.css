@@ -1,0 +1,45 @@
+@charset "ISO-8859-1";
+
+style>* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+.header {
+	border-radius: 20px;
+	background-color: #f1f1f1;
+	padding: 1px;
+	font-size: 15px;
+	margin: 10px 400px auto;
+}
+
+h1 {
+	text-align: center;
+}
+
+.mid-element {
+	margin: 0px 50px auto;
+	text-color: maroon;
+	text-align: left;
+}
+
+.validatior {
+	align: right;
+}
+
+.button {
+	background-color: #4CAF50; /* Green */
+	border: none;
+	color: white;
+	padding: 5px 5px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+}
+</
+style
+>
