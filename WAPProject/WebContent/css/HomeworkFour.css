@@ -22,7 +22,7 @@ body {
 /* Style the header */
 .header {
 	border-style: solid;
-  border-color: black;
+	border-color: black;
 	border-radius: 10px;
 	background-color: #e0e0ff;
 	padding: 1px;
@@ -41,7 +41,7 @@ body {
 	background-color: white;
 	padding: 1px;
 	font-size: 13px;
-	margin: 10px 50px auto;
+	margin: 0px 50px auto;
 }
 
 .header-mid {
@@ -50,10 +50,21 @@ body {
 
 form.form-example {
 	display: table;
+	width: 60%;
 }
 
 div.form-example {
 	display: table-row;
+}
+
+.table-pro {
+	font-size: 13px;
+}
+
+.form-row {
+	display: flex;
+	justify-content: flex-end;
+	padding: .5em;
 }
 
 label, input {
@@ -61,14 +72,32 @@ label, input {
 	margin-bottom: 10px;
 }
 
+td {
+	display: table-cell;
+	vertical-align: inherit;
+}
+
 label {
 	padding-right: 10px;
 }
 
+fieldset {
+	background-color: #e0e0ff;
+	border-radius: 10px;
+	border: 2px outset black;
+	margin: 30px 50px;
+}
+
+legend {
+	font-size: 13px;
+	background-color: white;
+	border: 2px outset black;
+	background-color: white;
+}
+
 .button {
 	background-color: #ffaaaa;
-	border-style: outset
-	color: white;
+	border-style: outset color: white;
 	padding: 5px 5px;
 	text-align: center;
 	text-decoration: none;

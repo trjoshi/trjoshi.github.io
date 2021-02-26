@@ -13,65 +13,59 @@
 		<img src="images/logo.png" alt="" /></img> <br> <br> <br> <br>
 	</div>
 
-	<div class="header">
+	<form action="" method="get" class="form-example">
+		<fieldset>
+			<legend> New User SignUp: </legend>
 
-		<div class="header-mid">
+			<table class="table-pro">
+				<tr>
+					<td><label for="name"><b>Name:</b> </label></td>
+					<td><input type="text" name="name" id="name"></td>
+				</tr>
 
-			<form action="" method="get" class="form-example">
-				<div class="form-example">
-					<label for="name"><b>Name:</b> </label> <input type="text"
-						name="name" id="name">
-				</div>
-				<div class="form-example">
-					<label for="gender"><b>Gender:</b></label> <input type="radio"
-						id="gender" name="gender" value="male">Male <input
-						type="radio" id="gender" name="gender" value="female">Female
-				</div>
-				<div class="form-example">
-					<label for="age"><b>Age:</b> </label> <input type="text" name="age"
-						id="age">
-				</div>
-				<div class="form-example">
+				<tr>
+					<td><label for="gender"><b>Gender:</b></label></td>
+					<td><input type="radio" id="gender" name="gender" value="male">Male
+						<input type="radio" id="gender" name="gender" value="female">Female</td>
+				</tr>
 
-					<label for="personality"><b>Personaliy Type:</b> </label> <input
-						type="text" name="personality" id="personality"> 
-						
-						(Don't
-					know your type?)
+				<tr>
+					<td><label for="age"><b>Age:</b> </label></td>
+					<td><input type="text" name="age" id="age"></td>
+				</tr>
 
-				</div>
-				<div class="form-example">
+				<tr>
+					<td><label for="personality"><b>Personaliy Type:</b> </label>
+					</td>
+					<td><input type="text" name="personality" id="personality">
+					</td>
+					<td style="color: red">(Don't know your type?)</td>
+				</tr>
 
-					<label for="os"><b>Favorite OS: </b></label>
-					<p>
-						<select id="assignment" name="assignment">
+				<tr>
+					<td><label for="os"><b>Favorite OS: </b></label></td>
+					<td><select id="assignment" name="assignment">
 							<option value="lab1">Windows</option>
 							<option value="lab2">Mac</option>
 							<option value="lab3">Linux</option>
 
 
-						</select>
-					</p>
-					<br>
-				</div>
+					</select></td>
+				</tr>
+
+				<tr>
+					<td><label for="seekingage"><b>Seeking Age:</b> </label></td>
+					<td><input type="text" name="seekingage" id="seekingage"
+						size="3" placeholder="min"> to <input type="text"
+						name="seekingage" id="seekingage" size="3" placeholder="max"></td>
+				</tr>
+
+			</table>
+
+		</fieldset>
+	</form>
 
 
-				<div class="form-example">
-					<label for="seekingage"><b>Seeking Age:</b> </label> <input
-						type="text" name="seekingage" id="seekingage" size="3"
-						placeholder="min"> to <input type="text" name="seekingage"
-						id="seekingage" size="3" placeholder="max">
-				</div>
-
-				<div class="button">
-					<button class="button">
-						<b>Sign Up</b>
-					</button>
-				</div>
-			</form>
-
-		</div>
-	</div>
 	<div class="header-down">
 		<div>
 			<p>
