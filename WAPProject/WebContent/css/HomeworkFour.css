@@ -13,24 +13,26 @@ body {
 	margin: 80px
 }
 
-.small-header {
-	border-radius: 20px;
-	background-color: #e0e0ff;
-	padding: 1px;
-	font-size: 15px;
-	margin: 10px 350px auto;
+.logo {
+	width: 50px;
+	height: 50px;
+	margin: 10px 50px auto;
 }
+
 /* Style the header */
 .header {
-	border-radius: 20px;
+	border-style: solid;
+  border-color: black;
+	border-radius: 10px;
 	background-color: #e0e0ff;
 	padding: 1px;
-	font-size: 15px;
-	margin: 10px 350px auto;
+	font-size: 13px;
+	width: 50%;
+	height: 300px;
+	margin: 25px 50px auto;
 }
 
 .ul {
-	margin
 	list-style: url(../images/back.jpg);
 }
 
@@ -38,12 +40,12 @@ body {
 	border-radius: 20px;
 	background-color: white;
 	padding: 1px;
-	font-size: 15px;
-	margin: 10px 350px auto;
+	font-size: 13px;
+	margin: 10px 50px auto;
 }
 
 .header-mid {
-	margin: 50px;
+	margin: 30px;
 }
 
 form.form-example {
@@ -65,7 +67,7 @@ label {
 
 .button {
 	background-color: #ffaaaa;
-	border: none;
+	border-style: outset
 	color: white;
 	padding: 5px 5px;
 	text-align: center;
