@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>State Management Quiz</title>
+<style>
+body {
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	line-height: 1;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.p1 {
+	font-family: 'Courier New';
+	font-size: 15px;
+	color: blue;
+	margin: 0px 10px;
+}
+
+.p2 {
+	font-family: 'Courier New';
+	font-size: 15px;
+	color: maroon;
+	margin: 0px 10px;
+}
+
+.header {
+	border: solid black;
+	background-color: #eff8f0;
+	padding: 1px;
+	margin: 0px 200px auto;
+}
+</style>
+
+</head>
+<body>
+	<div class="header">
+
+		<p style="text-align: center; font-size: 30px">
+			<b>State Management Quiz</b>
+		<p style="line-height: 30px; border: 1px solid black;">
+		<div class="p1">1. Can post requests be bookmarked? What are the
+			problems?</div>
+		<div class="p2">An HTTP post can be bookmarked, but since a
+			bookmark onlu consists of the URL. all of the form parameters will be
+			lost.This will often mean that the web server doesn't know what to do
+			with the request, since it was expecting some form parameters.</div>
+		<br> <br>
+
+
+		<div class="p1">2. What is the purpose of request dispatching?</div>
+		<div class="p2">The RequestDispatcher interface provides the
+			faclity of dispatching the request to another resource it may be
+			html, servlet or jsp.This interface can also be used to include the
+			content of another resource also. It is one of the way of servlet
+			collaboration.</div>
+		<br> <br>
+
+
+		<div class="p1">3. What is the difference between redirect and
+			request dispatch?</div>
+
+		<div class="p2">
+			Request Dispatch - Dispatch the request to some other JSP or Servlet,
+			user will not aware of this and finally response will go from where
+			the request is dispatched. <br> Request Redirect - Redirect
+			request where user will find the URL change and the response will
+			come from the redirected servlet of JSP.
+
+		</div>
+		<br> <br>
+
+		<div class="p1">4. What is an attribute ?</div>
+		<div class="p2">
+			An object bound into one of the three servlet API objects <br>1)
+			HttpServletRequest<br> 2) HttpSession<br> 3) ServletContext<br>
+			Is a name value pair<br> 1) value has type Object 2) name is
+			String
+		</div>
+		<br> <br>
+
+
+		<div class="p1">5. What is the difference between attributes and
+			parameters?</div>
+		<div class="p2">
+			1. Parameter represents data received as part of request where as
+			attributed represent data stored by servlet for another servlet
+			involed in processing the same request.<br> 2. Parameters
+			represent string data where as attributed can be any type of objects
+			<br> Parameters can only be used by the servlet whereas
+			attributed are stored, removed, replaced and read by the servlets.
+
+		</div>
+
+		<br> <br>
+
+
+		<div class="p1">6. What are dangers of using attributes?</div>
+		<div class="p2">
+			<ul>
+				<li>Shared by every servlet and every request in the
+					application</li>
+				<li>Like nuclear power
+					<ul>
+						<li>very powerful</li>
+						<li>have to be careful</li>
+					</ul>
+				</li>
+				<li>Not thread safe
+					<ul>
+						<li>Nor session attributes</li>
+						<li>Only request attributes thread safe</li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		<br> <br>
+
+
+		<div class="p1">7. What does it mean to say that http is
+			stateless? Give an example of a stateful protocol.</div>
+		<div class="p2">
+			HTTP is a stateless protocol, which means that after a web server
+			responds to a request, there is no memory of the request or who sent
+			it. To maintain a client-server conversation, it is necessary to get
+			past this barrier. In the world of servlets, keeping track of client
+			identity was accomplished using client cookies; keeping track of
+			client was accomplished by maintaining an HttpSession. These
+			activities are conducted behind the scenes by the servlet container.
+			<br> <br> <br>
+		</div>
+
+
+
+		<div class="p1">8. Give 5 different methods for maintaining
+			state information (count each attribute scope as one method).</div>
+		<div class="p2">
+
+
+
+			Container managed state (3 scopes): <br>5 ways to maintain state
+			<ol>
+				<li>request scope: destroyed when servlet finishes processing
+					request</li>
+				<li>session scope: destroyed when user closes browser</li>
+				<li>application scope destroyed when Container stopped.</li>
+				<li>Cookies saved on browser, temporary (deleted when the
+					browser closes) permanent</li>
+				<li>Hidden fields on a form</li>
+
+
+			</ol>
+		</div>
+		<br> <br>
+
+
+
+		<div class="p1">9. How long does a session last?</div>
+		<div class="p2">
+			<b>Client side</b>
+			<ol>
+				<li>Browser discards all temporary cookies when it closes</li>
+				<li>Every tab or window of browser will have access to all
+					cookies</li>
+			</ol>
+			<br> <b>Server side - 3 ways for container to remove
+				sessions</b>
+			<ol>
+				<li>session timeout in the DD</li>
+				<li>session.setMaxInactiveInterval(20*60); //seconds</li>
+				<li>session.invalidate(); //immediate</li>
+			</ol>
+		</div>
+		<br>
+
+		<div class="p1">10. What is a cookie, and how long does a cookie
+			last?</div>
+		<div class="p2">
+			Cookies are text files stored on the client computer and they are
+			kept for various information tracking putpose. <br> There are
+			two types of cookie life times <br>temporary cookie
+			<ol>
+
+				<li>browser removes when it closes</li>
+				<li>this is default</li>
+				<li>session cookies are like this</li>
+			</ol>
+			permanent cookie - a cookie that has a max age set
+		</div>
+		<br> <br>
+		<div class="p1">11. What is the purpose of URL rewriting?</div>
+		<div class="p2">
+			Changing a URL to the required format. URL reqriting allows URLs to
+			be more easily remembered by the user. When the URL is entered into
+			the web server, the URL rewrite engine modifies the syntax behind the
+			scenes to enable the appropriate web page or database item to be
+			retrived. <br> For example, to look up the definition for
+			"path", a user frieldly URL might look like
+			computerlanguage.com/path. The rewrite engine could trun it into the
+			following syntax: computerlanguages.com/results.php?definition=path.
+		</div>
+		<br> <br>
+		<div class="p1">12. Why does the request attribute report ‘null’
+			for the maintaining state demo?</div>
+		<div class="p2">On server side servlet check whether the session
+			is new or not If there are no session exists then it return NULL.</div>
+
+	</div>
+	<br>
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
