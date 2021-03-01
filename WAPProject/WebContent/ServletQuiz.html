@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Servlet Quiz</title>
+<style>
+body {
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	line-height: 1;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.p1 {
+	font-family: 'Courier New';
+	font-size: 15px;
+	color: blue;
+	margin: 0px 10px;
+}
+
+.p2 {
+	font-family: 'Courier New';
+	font-size: 15px;
+	color: maroon;
+	margin: 0px 10px;
+}
+
+.header {
+	border: solid black;
+	background-color: #eff8f0;
+	padding: 1px;
+	margin: 0px 200px auto;
+}
+</style>
+
+</head>
+<body>
+	<div class="header">
+
+		<p style="text-align: center; font-size: 30px">
+			<b>Servlet Quiz</b>
+		<p style="line-height: 30px; border: 1px solid black;">
+		<div class="p1">1. What is the difference between a web server
+			and a web container?</div>
+		<div class="p2">Web Server: A server which is capable of
+			handling requests, sent by a client and respond back with a HTTP
+			responce.</div>
+		<br>
+		<div class="p2">Web Container is used to manage the components
+			like servlets, JSP. It is a part of the web server.</div>
+		<br> <br>
+		<div class="p1">2. What is servlet?</div>
+		<div class="p2">A servlet is server-side java code that can
+			handle http requests and return dynamic content - Servlets are
+			managed by a servlet engine or container. Each request that comes in
+			results in the spawning of a new thread that runs a servlet
+			(eliminating the cost of creating a new process every time). One of
+			the best known open source servlet contaner is Tomcat.</div>
+		<br> <br>
+		<div class="p1">3. How do web servers and web containers
+			interact with servlets?</div>
+
+		<div class="p2">
+			Servers that support servlets have as a helper app a servlet
+			container.<br> When a request comes to the web server, if the
+			server sees the request is for a servlet, it passes the request data
+			to the servlet container.<br> The servlet container locates the
+			servlet, creates request and response objects and passes them to the
+			servlet, and returns to the web server the response stream that the
+			servlet produces.<br> The web server sends the response back to
+			the client browser to be rendered.<br>
+		</div>
+		<br> <br>
+
+		<div class="p1">4. Who creates request objects?</div>
+		<div class="p2">The servlet container create request and
+			response objects and passes them to servlets.</div>
+		<br> <br>
+
+		<div class="p1">5. What are the states in the servlet lifecycle?</div>
+		<div class="p2">
+			There are 6 stated in the servlet lifecycle.
+			<ol>
+				<li>Load servlet class (Class c = Class.forname(...))</li>
+				<li>2. Instantiate servlet (c.newInstance());</li>
+				<li>3. init() called only once in the servlet's life. Must
+					complete before Container can call service().</li>
+				<li>4. service() (called for each request, each request runs in
+					a separate thread)</li>
+				<li>5. destroy() (called only once)</li>
+			</ol>
+		</div>
+		<br> <br>
+		<div class="p1">6. Who calls init and when?</div>
+		<div class="p2">init() is called first by the servlet container
+			to indicate to a servlet that the servlet is being placed into
+			service.</div>
+		<br> <br>
+
+		<div class="p1">7. Which of init, service, and doGet should you
+			override?</div>
+		<div class="p2">
+			init(): If you have initialization code(like getting a database
+			connection or registering yourself with other objects), then you'll
+			override the init() method in the servlet class. <br> <br>
+			service(): We can not override the service() method. Service
+			implementation from HTTPServlet worry about calling the right one. <br>
+			<br> doGet() or doPost(): Whicever one(s) you override tells the
+			container what you support. If you don't override doPost(), for
+			example, then you're telling the container that this servlet does not
+			support HTTP post requests. <br> <br>
+		</div>
+
+
+
+		<div class="p1">8. In what sense are servlets multi-threaded?</div>
+		<div class="p2">Servlets are intrinsically multithreaded. This
+			meand a single instance can be assessed by more than one thread. if
+			the container received multiple requests for one servlet
+			simultaneously, the service() method of that servlet will be executed
+			concurrently in multiple threads.</div> <br> <br>
+
+
+
+		<div class="p1">9. What are the implications of this for servlet
+			instance variables?</div>
+		<div class="p2">Due to the thread safety in servlet it is
+			advised to not make instance variables. SInce servlet lifetime is
+			controlled by the server so the duration of a servlet isntance is
+			uncertain, as may be the number of instance and the number of thread
+			involed/</div>
+	</div>
+
+</body>
+</html>
