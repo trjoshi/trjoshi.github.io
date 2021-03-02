@@ -39,16 +39,14 @@ body {
 	<div class="header">
 
 		<p style="text-align: center; font-size: 30px">
-			<b>Servlet Quiz</b>
+			<b>JSP Quiz</b>
 		<p style="line-height: 30px; border: 1px solid black;">
 		<div class="p1">1. What is the main value of Java Server Pages?
 		</div>
 		<div class="p2">
 			There are two types of data in a JSP page: <br> 1) Template
-			Data: The static part, copied directly to response
-			<ul>
-				<li>static HTML</li>
-			</ul>
+			Data: The static part, copied directly to response - static HTML
+		
 			<br> 2) JSP Elements: The dynamic part, translated and executed
 			by the container
 			<ul>
@@ -56,7 +54,7 @@ body {
 				<li>can execute arbitrary Java code</li>
 			</ul>
 		</div>
-		<br> <br>
+		<br> 
 
 
 
@@ -74,24 +72,25 @@ body {
 				<li>Cleanup</li>
 			</ul>
 		</div>
-		<br> <br>
+		<br> 
 
 
 		<div class="p1">3. How are JSP pages related to HTML?</div>
 
 		<div class="p2">
-			<p>
+			
 				Jsp is html with a little java mixed in<br> a little java code
 				bracketed in example: <% %> etc<br> and lots of plain HTML
-			</p>
-			<br>
+			
+		
 		</div>
-		<br> <br>
+		<br>
 
 		<div class="p1">4. Give an example of a JSP scriptlet and show
 			how it will look in the JSP servlet .</div>
 		<div class="p2">
 			Scriptlet: Inserts Java statements inside service method
+			<br> Example:
 			<ul>
 				<li>% Java statements %></li>
 				<li><% count = count * 10; %></li>
@@ -99,7 +98,7 @@ body {
 
 			</ul>
 		</div>
-		<br> <br>
+		<br>
 
 		<div class="p1">5. Give an example of a JSP declaration and show
 			how it will look in the JSP servlet.</div>
@@ -112,7 +111,7 @@ body {
 				<li><%! int count = 0; %></li>
 			</ul>
 		</div>
-		<br> <br>
+		<br>
 
 
 		<div class="p1">6. Give an example of a JSP comment and show how
@@ -122,28 +121,29 @@ body {
 			<ul>
 				<li><%-- jsp comment --%></li>
 				<li>contrast with HTML comment</li>
-				<li><!– Comment --></li>
+				<li>Comment <!–- --></li>
 				<li>HTML comments get sent to the browser (part of the HTML)</li>
 				<li>JSP elements all processed by container and do not appear
 					in generated HTML</li>
 			</ul>
 
 		</div>
-		<br> <br>
+		<br>
 
 
 		<div class="p1">7. Give an example of a JSP expression and show
 			how it will look in the JSP servlet.</div>
 		<div class="p2">
-			expects a Java expression, which it puts inside ‘out.print’ in
+			Expects a Java expression, which it puts inside ‘out.print’ in
 			service method<br>
+				<br> Example:	
 			<ul>
 				<li><%= Java expression %></li>
 				<li>wraps it inside a print statement</li>
 				<li><%= ++count %> becomes … out.print( ++count ); … in service
 					method</li>
 			</ul>
-			<br> <br>
+			<br>
 		</div>
 
 
@@ -151,10 +151,10 @@ body {
 		<div class="p1">8. Give an example of a JSP directive and show
 			how it will look in the JSP servlet.</div>
 		<div class="p2">
-			<li>Directive: page level operations for the translation phase.
-				<%@ page %>
+			Directive: page level operations for the translation phase.
+				<br>Example: <%@ page %>
 		</div>
-		<br> <br>
+		<br>
 
 
 
@@ -174,14 +174,14 @@ body {
 				<li>otherwise ignore the expression.
 			</ul>
 		</div>
-		<br> <br>
+		<br>
 
 		<div class="p1">10. Explain how servlet attributes are involved
 			in EL expressions.</div>
 		<div class="p2">
 			${firstThing} - if firstThing is not an implicit EL object, then
 			search page, request, session and application scopes until attribute
-			"firstThing" is found <br> <br> ${firstThing.secondThing}
+			"firstThing" is found <br><br> ${firstThing.secondThing}
 			<ul>
 				<li>if firstThing is a bean then secondThing is a property of
 					the bean</li>
@@ -196,7 +196,7 @@ body {
 					the List</li>
 			</ul>
 		</div>
-		<br> <br>
+		<br>
 
 		<div class="p1">11. Explain how servlets and JSPs use request
 			dispatch to interact.</div>
@@ -206,7 +206,7 @@ body {
 			RequestDispatcher object, which is used as a wrapper around a server
 			resource located at a particular path or given by a particuSlar name.
 		</div>
-		<br> <br>
+		<br>
 	</div>
 
 </body>
