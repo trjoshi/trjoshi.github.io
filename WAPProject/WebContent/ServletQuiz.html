@@ -80,18 +80,18 @@ body {
 
 		<div class="p1">5. What are the states in the servlet lifecycle?</div>
 		<div class="p2">
-			There are 6 stated in the servlet lifecycle.
+			There are 5 stated in the servlet lifecycle.
 			<ol>
 				<li>Load servlet class (Class c = Class.forname(...))</li>
-				<li>2. Instantiate servlet (c.newInstance());</li>
-				<li>3. init() called only once in the servlet's life. Must
+				<li>Instantiate servlet (c.newInstance());</li>
+				<li>init() called only once in the servlet's life. Must
 					complete before Container can call service().</li>
-				<li>4. service() (called for each request, each request runs in
-					a separate thread)</li>
-				<li>5. destroy() (called only once)</li>
+				<li>service() (called for each request, each request runs in a
+					separate thread)</li>
+				<li>destroy() (called only once)</li>
 			</ol>
 		</div>
-		<br> <br>
+		<br> 
 		<div class="p1">6. Who calls init and when?</div>
 		<div class="p2">init() is called first by the servlet container
 			to indicate to a servlet that the servlet is being placed into
@@ -119,7 +119,8 @@ body {
 			meand a single instance can be assessed by more than one thread. if
 			the container received multiple requests for one servlet
 			simultaneously, the service() method of that servlet will be executed
-			concurrently in multiple threads.</div> <br> <br>
+			concurrently in multiple threads.</div>
+		<br> <br>
 
 
 

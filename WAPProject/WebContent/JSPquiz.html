@@ -35,7 +35,7 @@ body {
 </style>
 
 </head>
-<body>
+
 	<div class="header">
 
 		<p style="text-align: center; font-size: 30px">
@@ -45,16 +45,15 @@ body {
 		</div>
 		<div class="p2">
 			There are two types of data in a JSP page: <br> 1) Template
-			Data: The static part, copied directly to response - static HTML
-		
-			<br> 2) JSP Elements: The dynamic part, translated and executed
-			by the container
+			Data: The static part, copied directly to response - static HTML <br>
+			2) JSP Elements: The dynamic part, translated and executed by the
+			container
 			<ul>
 				<li>typically generate additional HTML portions of the page</li>
 				<li>can execute arbitrary Java code</li>
 			</ul>
 		</div>
-		<br> 
+		<br>
 
 
 
@@ -72,25 +71,25 @@ body {
 				<li>Cleanup</li>
 			</ul>
 		</div>
-		<br> 
+		<br>
 
 
 		<div class="p1">3. How are JSP pages related to HTML?</div>
 
 		<div class="p2">
-			
-				Jsp is html with a little java mixed in<br> a little java code
-				bracketed in example: <% %> etc<br> and lots of plain HTML
-			
-		
+
+			Jsp is html with a little java mixed in<br> a little java code
+			bracketed in example: <% %> etc<br> and lots of plain HTML
+
+
 		</div>
 		<br>
 
 		<div class="p1">4. Give an example of a JSP scriptlet and show
 			how it will look in the JSP servlet .</div>
 		<div class="p2">
-			Scriptlet: Inserts Java statements inside service method
-			<br> Example:
+			Scriptlet: Inserts Java statements inside service method <br>
+			Example:
 			<ul>
 				<li>% Java statements %></li>
 				<li><% count = count * 10; %></li>
@@ -135,8 +134,7 @@ body {
 			how it will look in the JSP servlet.</div>
 		<div class="p2">
 			Expects a Java expression, which it puts inside ‘out.print’ in
-			service method<br>
-				<br> Example:	
+			service method<br> <br> Example:
 			<ul>
 				<li><%= Java expression %></li>
 				<li>wraps it inside a print statement</li>
@@ -151,8 +149,8 @@ body {
 		<div class="p1">8. Give an example of a JSP directive and show
 			how it will look in the JSP servlet.</div>
 		<div class="p2">
-			Directive: page level operations for the translation phase.
-				<br>Example: <%@ page %>
+			Directive: page level operations for the translation phase. <br>Example:
+			<%@ page %>
 		</div>
 		<br>
 
@@ -181,7 +179,8 @@ body {
 		<div class="p2">
 			${firstThing} - if firstThing is not an implicit EL object, then
 			search page, request, session and application scopes until attribute
-			"firstThing" is found <br><br> ${firstThing.secondThing}
+			"firstThing" is found <br>
+			<br> ${firstThing.secondThing}
 			<ul>
 				<li>if firstThing is a bean then secondThing is a property of
 					the bean</li>

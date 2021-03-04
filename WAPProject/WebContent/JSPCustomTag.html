@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>JSP Custom Tag Quiz</title>
+<style>
+body {
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	line-height: 1;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.p1 {
+	font-family: 'Courier New';
+	font-size: 15px;
+	color: blue;
+	margin: 0px 10px;
+}
+
+.p2 {
+	font-family: 'Courier New';
+	font-size: 15px;
+	color: maroon;
+	margin: 0px 10px;
+}
+
+.header {
+	border: solid black;
+	background-color: #eff8f0;
+	padding: 1px;
+	margin: 0px 200px auto;
+}
+</style>
+
+</head>
+<body>
+	<div class="header">
+
+		<p style="text-align: center; font-size: 30px">
+			<b>Servlet Quiz</b>
+		<p style="line-height: 30px; border: 1px solid black;">
+		<div class="p1">1 Rewrite the JSP page in the first demo
+			(forEach) to use scripting instead of the JSTL forEach</div>
+		<div class="p2">
+			<br> <img src="images/scriplet.png">
+
+
+		</div>
+
+		<br> <br>
+		<div class="p1">2 How do custom tags relate to JSTL?</div>
+		<div class="p2">JSTL provides new tags for JSPs that reduce
+			scripting. JSTL uses the custom tag api, but have become a standard
+			library, essentially a part of JSP language.</div>
+		<br> <br>
+
+
+		<div class="p1">3 What is the role of the URI in the TLD and the
+			taglib directive?</div>
+		<div class="p2">
+			"uri" element in the TLD is a unique name for the tag library. It
+			does not need to represent any actual location. It simply has to be a
+			name- the same name we use in the laglib directive. <br>
+		</div>
+		<br> <br>
+
+		<div class="p1">4 What is a tag handler class?</div>
+		<div class="p2">
+			A tage handler class is basically a JavaBeans class, it should
+			contain set of set method and set of get methods. <br> All the
+			attributes of custom tag must be used as properties of data members
+			in tag handler class in the same order in which they appear. <br>Every
+			tag handler class must extend a predefined class called
+			javax.servlet.jsp.target.TagSupport.
+		</div>
+		<br> <br>
+
+		<div class="p1">5 What is the role of attribute setters in a tag
+			handler class?</div>
+		<div class="p2">All propertied of a tag handler instance exposed
+			as attributes will be initialized by the container using the
+			appropriate setter methods before the instance can be used to perform
+			the action methods. it is responsibility of user code, be it
+			scriptlets, JavaBeans code, or code inside custom tags , to not
+			invoke these setter methods, as doing otherwise would infere with the
+			container knowledge.</div>
+		<br>
+
+		<div class="p1">6 What is the role of the doTag() method in a
+			tag handler class?</div>
+		<div class="p2">The SimpleTag interface provides a simple
+			doTag() mehtod, which is called one and only once for any given tag
+			invocation. All tag ligic, interaction, body evaluations etc. are to
+			be performed in this single method. Thus, simple tag handlers have
+			the squivalent power of body tag, but with a much simpler lifecycle
+			and interface.</div>
+		<br> <br>
+
+		<div class="p1">7 What does the operation
+			getJspContext()getOut()write(“Hi Bob”) do when called in a doTag()
+			method?</div>
+		<div class="p2">
+			We can not write it because it gives the error <q>Type mismatch:
+				cannot convert from void to JspWriter</q> It can be write it like:<br>
+			JspWriter outa =getJspContext().getOut();<br> outa.write("Hi
+			Bob"); <br> <br>
+		</div>
+
+
+
+		<div class="p1">8 What does the operation
+			getJspBody()invoke(null) do when called in a doTag() method?</div>
+		<div class="p2">When getJspBody()invoke(null) is called , it is
+			the output resulting from the execution of the tag body's JSP content
+			that gets passed to the client, not the JSP code itself.</div>
+		<br> <br>
+
+	</div>
+</body>
+</html>
