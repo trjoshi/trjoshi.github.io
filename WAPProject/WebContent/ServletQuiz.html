@@ -91,7 +91,7 @@ body {
 				<li>destroy() (called only once)</li>
 			</ol>
 		</div>
-		<br> 
+		<br>
 		<div class="p1">6. Who calls init and when?</div>
 		<div class="p2">init() is called first by the servlet container
 			to indicate to a servlet that the servlet is being placed into
@@ -101,22 +101,14 @@ body {
 		<div class="p1">7. Which of init, service, and doGet should you
 			override?</div>
 		<div class="p2">
-			init(): If you have initialization code(like getting a database
-			connection or registering yourself with other objects), then you'll
-			override the init() method in the servlet class. <br> <br>
-			service(): We can not override the service() method. Service
-			implementation from HTTPServlet worry about calling the right one. <br>
-			<br> doGet() or doPost(): Whicever one(s) you override tells the
-			container what you support. If you don't override doPost(), for
-			example, then you're telling the container that this servlet does not
-			support HTTP post requests. <br> <br>
+			We can override only the doGet() method. <br> <br>
 		</div>
 
 
 
 		<div class="p1">8. In what sense are servlets multi-threaded?</div>
 		<div class="p2">Servlets are intrinsically multithreaded. This
-			meand a single instance can be assessed by more than one thread. if
+			mean a single instance can be assessed by more than one thread. if
 			the container received multiple requests for one servlet
 			simultaneously, the service() method of that servlet will be executed
 			concurrently in multiple threads.</div>
@@ -127,10 +119,10 @@ body {
 		<div class="p1">9. What are the implications of this for servlet
 			instance variables?</div>
 		<div class="p2">Due to the thread safety in servlet it is
-			advised to not make instance variables. SInce servlet lifetime is
-			controlled by the server so the duration of a servlet isntance is
+			advised to not make instance variables. Since servlet lifetime is
+			controlled by the server so the duration of a servlet instance is
 			uncertain, as may be the number of instance and the number of thread
-			involed/</div>
+			involed.</div>
 	</div>
 
 </body>
