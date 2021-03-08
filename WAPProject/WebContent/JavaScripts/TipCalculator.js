@@ -1,14 +1,10 @@
-/**
- * 
- */
+//"unused": false,
 
 function tipCalc() {
-
-	let subTot = document.getElementById("subTotal").value;
-	let tip = document.getElementById("tip").value;
-	let total = (Number(subTot) * Number(tip))/100;
-	let rslt = document.getElementById("result");
+	var subTot = document.getElementById("subTotal").value;
+	var tip = document.getElementById("tip").value;
+	var total = (Number(subTot) * Number(tip))/100;
+	var rslt = document.getElementById("result");
 	console.log(total);
 	rslt.innerHTML = total;
-
 }
