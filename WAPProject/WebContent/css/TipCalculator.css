@@ -1,0 +1,31 @@
+@charset "ISO-8859-1";
+
+body {
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	line-height: 1;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.mainBody {
+	width: 70%;
+	margin: 40px 350px;
+	text-align: bottom;
+}
+
+.innBody {
+	display: flex;
+}
+
+.inputElement {
+	width: 10;
+	font-size: 25px;
+	margin: 25px;
+}
+
+.finalresult {
+	font-size: 25px;
+	display: flex;
+	margin: 0px 25px;
+}
