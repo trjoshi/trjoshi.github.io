@@ -21,10 +21,8 @@ function okayClick() {
 
 function inputClick() {
 	document.getElementById("inputText").style = "color: red;text-decoration:underline; font-weight:bold; ";
-	document.getElementById("body").style ="background-image:url('images/background.gif');";
+	document.getElementById("body").style = "background-image:url('images/background.gif');";
 	document.getElementById("body").style.backgroundRepeat = "repeat";
-
-	
 
 }
 
