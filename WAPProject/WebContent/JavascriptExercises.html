@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Javascript Exercise</title>
+<style>
+body {
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	line-height: 1;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.p1 {
+	font-family: 'Courier New';
+	font-size: 15px;
+	color: blue;
+	margin: 0px 15px;
+}
+
+.p2 {
+	font-family: 'Courier New';
+	font-size: 15px;
+	color: maroon;
+	margin: 0px 15px;
+}
+
+.header {
+	border: solid black;
+	background-color: #eff8f0;
+	padding: 1px;
+	margin: 0px 200px auto;
+}
+</style>
+
+</head>
+<body>
+	<div class="header">
+
+		<p style="text-align: center; font-size: 30px">
+			<b>Javascript Exercise</b>
+		<p style="line-height: 30px; border: 1px solid black;">
+		<div class=p1>
+			1. What is the difference between the following 2 statements? <br>setTimeout(booyah,
+			2000); <br>setTimeout(booyah(), 2000);
+		</div>
+		<div class=p2>
+			The setTimeout(booyah, 2000) statement waits for the 2000ms and
+			executes the booyah function.<br> setTimeout(booyah(), 2000) it
+			calls the function immediately, rather than waiting the 2000ms!
+		</div>
+		<br>
+		<div class=p1>
+			2. What do the following 2 alerts display (answer without running the
+			code)?<br> var myfunc = function(a, x) {<br> return a * x;<br>
+			};<br> var x = myfunc(2, 3);<br> var y = myfunc;<br>
+			alert(x);<br> alert(y(2,3));<br>
+		</div>
+
+		<div class=p2>This code gives two alerts with 6 in the message.</div>
+		<br>
+
+		<div class=p1>
+			3. Write functions booyah1 and booyah2 so that in both cases below,
+			an alert box comes up after 2 seconds that says "BOOYAH!"<br>
+			setTimeout(booyah1, 2000);<br> setTimeout(booyah2(), 2000);
+		</div>
+		<br>
+
+		<div class=p2>
+			<img src="images/booyah.png" alt="booyah">
+		</div>
+		<br>
+
+		<div class=p1>4. What is "Unobtrusive Javascript"? What is the
+			practical application of Unobtrusive Javascript (and the reasons for
+			using it)?</div>
+		<div class=p2>
+			<b>Unobtrusive Javascript</b><br> HTML with minimal JavaScript
+			inside<br> uses the DOM to attach and execute all JavaScript
+			functions<br> allows separation of web site into 3 major
+			categories:<br> content (HTML) - what is it?<br>
+			presentation (CSS) - how does it look?<br> behavior (JavaScript)
+			- how does it respond to user interaction?<br> <br> <b>Application
+				of Unobtrusive Javascript</b><br> well-written JavaScript code
+			should contain as little CSS as possible<br> use JS to set CSS
+			classes/IDs on elements<br> define the styles of those
+			classes/IDs in your CSS file<br>
+
+
+		</div>
+		<br>
+
+	</div>
+
+</body>
+</html>
