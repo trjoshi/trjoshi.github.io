@@ -1,8 +1,9 @@
 window.onload = function() {
+	// var myVar;
 	var okButton = document.getElementById("ok");
-	okButton.onclick = okayClick;
+	okButton.onclick = delay;
 	var inputCheck = document.getElementById("input");
-	inputCheck.onclick = delay;
+	inputCheck.onclick = inputClick;
 };
 
 function okayClick() {
@@ -11,19 +12,23 @@ function okayClick() {
 
 	// 2nd task
 
-	document.getElementById("inputText").style.fontSize = (Number(document
-			.getElementById("inputText").style.fontSize) + 5)
-			+ "pt";
+	txt = document.getElementById("inputText");
+	style = window.getComputedStyle(txt, null).getPropertyValue('font-size');
+	currentSize = parseFloat(style);
+	txt.style.fontSize = (currentSize + 2) + 'px';
 
 }
 
 function inputClick() {
-	document.getElementById("inputText").style = "color: red;text-decoration:underline; font-weight:bold";
+	document.getElementById("inputText").style = "color: red;text-decoration:underline; font-weight:bold; ";
+	document.getElementById("body").style ="background-image:url('images/background.gif');";
+	document.getElementById("body").style.backgroundRepeat = "repeat";
+
+	
 
 }
-var myVar;
 
 function delay() {
-	
-	  myVar = setInterval(okayClick, 500);
-	}
+
+	setInterval(okayClick, 500);
+}
