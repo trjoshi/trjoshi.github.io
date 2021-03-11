@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Javascript Scope Exercise</title>
+<style>
+body {
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	line-height: 1;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.p1 {
+	font-family: 'Courier New';
+	font-size: 15px;
+	color: blue;
+	margin: 0px 10px;
+}
+
+.p2 {
+	font-family: 'Courier New';
+	font-size: 15px;
+	color: maroon;
+	margin: 0px 10px;
+}
+
+.header {
+	border: solid black;
+	background-color: #eff8f0;
+	padding: 1px;
+	margin: 0px 200px auto;
+}
+</style>
+
+</head>
+<body>
+	<div class="header">
+
+		<p style="text-align: center; font-size: 30px">
+			<b>Javascript Scope Exercise</b>
+		<p style="line-height: 30px; border: 1px solid black;">
+		<div class="p1">
+			1. Determine what this Javascript code will print out (without
+			running it):<br> x = 1;<br> var a = 5;<br> var b = 10;<br>
+			var c = function(a, b, c) {<br> var x = 10;<br>
+			document.write(x);<br> document.write(a);<br> var f =
+			function(a, b, c) {<br> b = a;<br> document.write(b);<br>
+			b = c;<br> var x = 5;<br> }<br> f(a,b,c);<br>
+			document.write(b);<br> }<br> c(8,9,10);<br>
+			document.write(b);<br> document.write(x);<br> }<br> <br>
+
+		</div>
+		<div class="p2">
+			output should be:<br> document.write(x) - 10<br>
+			document.write(a) - 8<br> document.write(b) - 8<br>
+			document.write(b) - 9<br> document.write(b) - 10<br>
+			document.write(x) - 1<br>
+		</div>
+		<br> <br>
+
+		<div class="p1">2. What is the difference between a method and
+			function?</div>
+		<div class="p2">
+			Functions: A function is a block of code written to perform some
+			specific set of tasks. We can define a function using the function
+			keyword, followed by Name and optional parameters. Body of function
+			is enclosed in curly braces. <br> Syntax: function
+			functionName(parameters){<br> //content<br> }<br> <br>
+			Methods: A Javascript methods is a property of an object that contais
+			a function function definition. Methods are functions stored as
+			object properties. Object method can be accessed with the following
+			syntax. <br> Syntax: object ={<br> methodName: function(){<br>
+			// content }<br> }<br> object.methodName()<br>
+		</div>
+		<br> <br>
+
+		<div class="p1">3. What does 'this' refer to when used in a Java
+			method?</div>
+		<div class="p2">In Java this refers to the current object
+			instance. It can't access anything outside the current stack frame,
+			and if the code isn't in an object instane(example: static method)
+			then "this" is not allowed</div>
+		<br> <br>
+
+		<div class="p1">4. What does 'this' refer to when used in a
+			JavaScript method?</div>
+		<div class="p2">In javascript , execution scope is heap based
+			and what objects are accessible depends on the exectution context of
+			the code which is being executed.</div>
+		<br> <br>
+
+		<div class="p1">5. What does 'this' refer to when used in a
+			JavaScript constructor function?</div>
+		<div class="p2">The keyword this inside the constructor function
+			points to the newly created object.</div>
+		<br> <br>
+
+		<div class="p1">6. Assume object x is the prototype for object y
+			in Javascript. Object x has a method f( ) containing keyword 'this'.
+			When f is called by x.f( ), what does 'this' refer to?</div>
+		<div class="p2">This refers to the Key of the function f().</div>
+		<br> <br>
+
+		<div class="p1">7. What is a free variable in JavaScript?</div>
+		<div class="p2">A variable referred to by a function that is not
+			one of its parameters or local variables.</div>
+		<br> <br>
+
+		<div class="p1">8. Create an object that has properties with
+			name = "fred" and major="music" and a property that is a function
+			that takes 2 numbers and returns the smallest of the two, or the
+			square of the two if they are equal.</div>
+		<div class="p2">
+			var obj = { <br> 'name' : "fred", <br> 'major' : "music", <br>
+			'fun' : function(a, b) { <br> if (a == b) { <br> return a *
+			a + b * b; <br> } <br> if (a < b) { <br> return a; <br>
+			} else { <br> return b; <br> } <br> } <br> }; <br>
+		</div>
+		<br> <br>
+
+		<div class="p1">9. Write Javascript code for creating three
+			Employee objects using the "new" keyword and a constructor function.
+			Employee objects have the following fields: name, salary, position.</div>
+		<div class="p2">
+			function Employee(name, salary, position){<br> this.name = name;<br>
+			this.salary = salary;<br> this.position = position;<br> }<br>
+			<br> var empOne = new Employee("Tirth raj joshi",90000,"DBA");<br>
+			var empTwo = new Employee("Manish joshi",95000,"DBA");<br> var
+			empThree = new Employee("Raj joshi",90000,"DBA");<br> <br>
+		</div>
+		<br> <br>
+
+		<div class="p1">10. Write a Javascript function that takes any
+			number of input arguments and returns the product of the arguments.</div>
+		<div class="p2">
+			<br> function product(x, y, ...more){<br> var prod = x*y;<br>
+			if(more.length > 0){<br> for(var i=0; i< more.length; i++){<br>
+			prod = prod * more[i];<br> }<br> }<br>
+			console.log(prod);<br> }<br>
+
+
+		</div>
+		<br> <br>
+
+		<div class="p1">11. Write an arrow function that returns the
+			maximum of its three input arguments.</div>
+		<div class="p2">
+			<br> function maxValue(a,b,c){<br> var arr=[];<br>
+			arr[] =a;<br> arr[] =b;<br> arr[] =c;<br> var max = a;<br>
+			for(var i = 0; i < arr.length; i++)<br> {<br> if(max <
+			arr[i]){<br> max = arr[i];<br> }<br> }<br> }<br>
+		</div>
+		<br> <br>
+
+
+	</div>
+</body>
+</html>
