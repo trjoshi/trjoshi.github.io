@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<textarea id="textarea" rows="20" cols="40"></textarea>
+	<button onclick="rudyTimer()">Click me!</button>
+	<script>
+		var rudyTimer = (function() {
+
+			timer = null; // stores ID of interval timer
+
+			function delayMsg2() {
+
+				if (timer === null) {
+					timer = setInterval(rudy, 1000);
+				} else {
+					clearInterval(timer);
+					timer = null;
+				}
+			}
+			function rudy() { // called each time the timer goes off
+				document.getElementById("textarea").innerHTML += "Rudy!";
+			}
+			delayMsg2();
+		});
+	</script>
+</body>
+</html>
