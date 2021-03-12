@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>JQuery Quiz</title>
+<style>
+body {
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	line-height: 1;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.p1 {
+	font-family: 'Courier New';
+	font-size: 15px;
+	color: blue;
+	margin: 0px 10px;
+}
+
+.p2 {
+	font-family: 'Courier New';
+	font-size: 15px;
+	color: maroon;
+	margin: 0px 10px;
+}
+
+.header {
+	border: solid black;
+	background-color: #eff8f0;
+	padding: 1px;
+	margin: 0px 200px auto;
+}
+</style>
+
+</head>
+<body>
+	<div class="header">
+
+		<p style="text-align: center; font-size: 30px">
+			<b>JQuery Quiz</b>
+		<p style="line-height: 30px; border: 1px solid black;">
+		<div class="p1">1. In jQuery terminology, what is the difference
+			between the "jQuery function" and the "jQuery object"?</div>
+		<div class="p2">
+			The jQuery library provides the jQuery function, which lets you
+			select elements using CSS selectors. <br>For example:<br>
+			var listItems = $('li');<br> Here $ is for the jQuery function.
+			<br> <br> When the jQuery function is envoked with a CSS
+			selector, it will return a jQuery Object wrapping all the elements
+			that math the selector.<br> jQUery Objects behaves both like an
+			objects and an arrays.<br> For example:<br> var divs =
+			$("div"); <br>for (i=0 ; i< divs.length; i++){<br>
+			console.log(divs[i])};<br>
+
+		</div>
+		<br> <br>
+		<div class="p1">2. Write jQuery code to find all h1 elements
+			that are children of a div element and make their background color
+			red.</div>
+		<div class="p2">
+			Solution:<br> <br> <img src="images/quiz2.png">
+
+
+		</div>
+		<br> <br>
+		<div class="p1">3. Use a jQuery method to insert the text "YES!"
+			at the end of the element.</div>
+
+		<div class="p2">
+			Solution:<br> <br> <img src="images/quiz3.png">
+		</div>
+		<br> <br>
+
+	</div>
+</body>
+</html>
