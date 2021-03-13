@@ -86,9 +86,8 @@ body {
 
 		<div class="p1">4. What does 'this' refer to when used in a
 			JavaScript method?</div>
-		<div class="p2">In javascript , execution scope is heap based
-			and what objects are accessible depends on the exectution context of
-			the code which is being executed.</div>
+		<div class="p2">this keyword refers to an object, that object which is executing the current bit of javascript code.<br>
+In other words, every javascript function while executing has a reference to its current execution context, called this. Execution context means here is how the function is called.</div>
 		<br> <br>
 
 		<div class="p1">5. What does 'this' refer to when used in a
@@ -100,7 +99,7 @@ body {
 		<div class="p1">6. Assume object x is the prototype for object y
 			in Javascript. Object x has a method f( ) containing keyword 'this'.
 			When f is called by x.f( ), what does 'this' refer to?</div>
-		<div class="p2">This refers to the Key of the function f().</div>
+		<div class="p2">"this" refers to the ojects x which is calling to the method f().</div>
 		<br> <br>
 
 		<div class="p1">7. What is a free variable in JavaScript?</div>
@@ -112,11 +111,22 @@ body {
 			name = "fred" and major="music" and a property that is a function
 			that takes 2 numbers and returns the smallest of the two, or the
 			square of the two if they are equal.</div>
-		<div class="p2">
-			var obj = { <br> 'name' : "fred", <br> 'major' : "music", <br>
-			'fun' : function(a, b) { <br> if (a == b) { <br> return a *
-			a + b * b; <br> } <br> if (a < b) { <br> return a; <br>
-			} else { <br> return b; <br> } <br> } <br> }; <br>
+		<div class="p2"> <br>
+			var obj = { <br>
+			'name' : "fred", <br>
+			'major' : "music", <br>
+			'fun' : function(a, b) { <br>
+				if (a == b) { <br>
+					return "Square of the two number is : " + a * a + ", " + b
+							* b; <br>
+				} <br>
+				if (a < b) { <br>
+					return "Smallest number is: " + a; <br>
+				} else { <br>
+					return "Smallest number is: " + b; <br>
+				} <br>
+			} <br>
+		}; <br> <br>
 		</div>
 		<br> <br>
 
@@ -147,10 +157,19 @@ body {
 		<div class="p1">11. Write an arrow function that returns the
 			maximum of its three input arguments.</div>
 		<div class="p2">
-			function maxValue(a,b,c){<br> var arr=[];<br> arr[] =a;<br>
-			arr[] =b;<br> arr[] =c;<br> var max = a;<br> for(var i
-			= 0; i < arr.length; i++)<br> {<br> if(max < arr[i]){<br>
-			max = arr[i];<br> }<br> }<br> }<br>
+			var fun =	(a,b,c) => {<br>
+			var arr = [];<br>
+			arr.push(a, b, c);		<br>	
+			var max = arr[0];<br>
+			for (var i = 0; i < arr.length; i++) {<br>
+				if (max < arr[i]) {<br>
+					max = arr[i];<br>
+				}<br>
+			}<br>
+
+			return max;<br>
+			
+		}<br>
 		</div>
 		<br> <br>
 
