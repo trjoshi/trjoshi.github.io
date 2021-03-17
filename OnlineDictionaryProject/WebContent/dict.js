@@ -36,7 +36,10 @@ function funSearchButton(searchText) {
 			// alert("Success " + response.message);
 
 			if (Object.keys(response).length === 0) {
+				
+				$(".result-set").text('');
 				alert("No definitions found for this word.")
+				
 			} else {
 				display(response);
 			}
