@@ -8,6 +8,7 @@ function funSearch() {
 	var searchText = document.getElementById("searchText").value;
 
 	if (searchText == "") {
+		$(".result-set").text('');
 		alert("Please enter a word for search!!");
 	} else {
 		funSearchButton(searchText);
