@@ -10,7 +10,7 @@ function funSearch() {
 	if (searchText == "") {
 		alert("Please enter a word for search!!");
 	} else {
-		funSearchButton(searchText)
+		funSearchButton(searchText);
 	}
 
 	// alert(searchText);
@@ -36,16 +36,16 @@ function funSearchButton(searchText) {
 			// alert("Success " + response.message);
 
 			if (Object.keys(response).length === 0) {
-				
+
 				$(".result-set").text('');
-				alert("No definitions found for this word.")
-				
+				alert("No definitions found for this word.");
+
 			} else {
 				display(response);
 			}
 		},
 		error : function(xhr, status, error) {
-			var errorMessage = xhr.status + ': ' + xhr.statusText
+			var errorMessage = xhr.status + ': ' + xhr.statusText;
 			alert('Error - ' + errorMessage);
 		},
 
@@ -61,4 +61,4 @@ function display(response) {
 		$(".result-set").append(name + " </br></br>");
 	});
 
-};
+}
